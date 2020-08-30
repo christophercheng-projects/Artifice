@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A149C684E6341DA908A7AA8 /* SandboxPBR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B0AF10487C5C4285318550 /* SandboxPBR.cpp */; };
+		28A954327F36BEA457AFD272 /* Etna.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F312393AF6830B6C77EFAF7A /* Etna.cpp */; };
+		40970B50B4F1504232D4D990 /* SandboxAtmosphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA8EE678CCB8C32A00A9ACB8 /* SandboxAtmosphere.cpp */; };
+		457CA30DDBA5B4FF9D0C114D /* libArtifice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3EAE95FF34B847505714D5 /* libArtifice.a */; };
+		5F1CD3CCD03F74BE8606220C /* Sandbox2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9AF8134E1EA39E6C985C774 /* Sandbox2D.cpp */; };
+		6879354ED99BD6408F62838E /* Sandbox3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1332996F96DE248E1096FD6 /* Sandbox3D.cpp */; };
+		713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BACC980CF188B320DBC2FC0 /* IOKit.framework */; };
+		75C76760A6AB5F52B9C395A0 /* Sandbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBA5A788E1CBD73A48D2CDC8 /* Sandbox.cpp */; };
+		9130093853F069AAB1254778 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B91C4E06FD8CD12F3C5FB20 /* QuartzCore.framework */; };
+		A724D9FC144CE86E15DFD83C /* SandboxScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1BB07641F1DFD96953CFDA4 /* SandboxScene.cpp */; };
+		B133132C531CAF1E4A43C16C /* AtmosphereLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51B390941FD6E446A6E536D4 /* AtmosphereLayer.cpp */; };
+		DB5F826832C4F55AE4D310A8 /* SandboxDigits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD2B6C10DF24B6C25903F250 /* SandboxDigits.cpp */; };
+		F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */; };
+		FF2D8D12437C328485A36B52 /* Atmosphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0016C61A21E2734C5E979C5A /* Atmosphere.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		358CAC695DC7651B4562F2A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8AF8EFA9A8132185B16F2F /* ../Artifice/Artifice.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D85AB1D6EF6D4D08DF894816;
+			remoteInfo = libArtifice.a;
+		};
+		87C71F02B001D7B4979D6542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8AF8EFA9A8132185B16F2F /* ../Artifice/Artifice.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D08A6FC7DBBA3EEF19D753C;
+			remoteInfo = libArtifice.a;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0016C61A21E2734C5E979C5A /* Atmosphere.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Atmosphere.cpp; path = Source/Atmosphere.cpp; sourceTree = "<group>"; };
+		0BACC980CF188B320DBC2FC0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		26B0AF10487C5C4285318550 /* SandboxPBR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SandboxPBR.cpp; path = Source/SandboxPBR.cpp; sourceTree = "<group>"; };
+		2BB93F0051DF6EB2B8E66540 /* Sandbox3D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Sandbox3D.h; path = Source/Sandbox3D.h; sourceTree = "<group>"; };
+		2D2D66A4759E4AD6BA3D1CE4 /* Atmosphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Atmosphere.h; path = Source/Atmosphere.h; sourceTree = "<group>"; };
+		42B0956E647C42A0A1316BAE /* SandboxScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SandboxScene.h; path = Source/SandboxScene.h; sourceTree = "<group>"; };
+		51B390941FD6E446A6E536D4 /* AtmosphereLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AtmosphereLayer.cpp; path = Source/AtmosphereLayer.cpp; sourceTree = "<group>"; };
+		67D6575AB0473B8CF4E60D9A /* SandboxPBR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SandboxPBR.h; path = Source/SandboxPBR.h; sourceTree = "<group>"; };
+		7266B67EA46001301E3F3CBE /* AtmosphereLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AtmosphereLayer.h; path = Source/AtmosphereLayer.h; sourceTree = "<group>"; };
+		7741CB5E9D67FB10046EF19E /* Sandbox2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Sandbox2D.h; path = Source/Sandbox2D.h; sourceTree = "<group>"; };
+		8B91C4E06FD8CD12F3C5FB20 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AD2B6C10DF24B6C25903F250 /* SandboxDigits.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SandboxDigits.cpp; path = Source/SandboxDigits.cpp; sourceTree = "<group>"; };
+		AE6AFE3A71D6BFECB07A647A /* SandboxDigits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SandboxDigits.h; path = Source/SandboxDigits.h; sourceTree = "<group>"; };
+		B9AF8134E1EA39E6C985C774 /* Sandbox2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Sandbox2D.cpp; path = Source/Sandbox2D.cpp; sourceTree = "<group>"; };
+		BA8EE678CCB8C32A00A9ACB8 /* SandboxAtmosphere.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SandboxAtmosphere.cpp; path = Source/SandboxAtmosphere.cpp; sourceTree = "<group>"; };
+		BBA5A788E1CBD73A48D2CDC8 /* Sandbox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Sandbox.cpp; path = Source/Sandbox.cpp; sourceTree = "<group>"; };
+		C26D6E0465B8F7368089C444 /* Etna.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Etna.h; path = Source/Etna.h; sourceTree = "<group>"; };
+		CA8AF8EFA9A8132185B16F2F /* libArtifice.a */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Artifice.xcodeproj"; path = ../Artifice/Artifice.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CBCE9B276EBCC1D9FDE2A167 /* Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Sandbox.app; path = Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1332996F96DE248E1096FD6 /* Sandbox3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Sandbox3D.cpp; path = Source/Sandbox3D.cpp; sourceTree = "<group>"; };
+		D1BB07641F1DFD96953CFDA4 /* SandboxScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SandboxScene.cpp; path = Source/SandboxScene.cpp; sourceTree = "<group>"; };
+		F312393AF6830B6C77EFAF7A /* Etna.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Etna.cpp; path = Source/Etna.cpp; sourceTree = "<group>"; };
+		F4004C22C2239FD44931F262 /* SandboxAtmosphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SandboxAtmosphere.h; path = Source/SandboxAtmosphere.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EBB1517230DB2C93545FB57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */,
+				713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */,
+				9130093853F069AAB1254778 /* QuartzCore.framework in Frameworks */,
+				457CA30DDBA5B4FF9D0C114D /* libArtifice.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6849586FFB54B1614389A6AF /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				0016C61A21E2734C5E979C5A /* Atmosphere.cpp */,
+				2D2D66A4759E4AD6BA3D1CE4 /* Atmosphere.h */,
+				51B390941FD6E446A6E536D4 /* AtmosphereLayer.cpp */,
+				7266B67EA46001301E3F3CBE /* AtmosphereLayer.h */,
+				F312393AF6830B6C77EFAF7A /* Etna.cpp */,
+				C26D6E0465B8F7368089C444 /* Etna.h */,
+				BBA5A788E1CBD73A48D2CDC8 /* Sandbox.cpp */,
+				B9AF8134E1EA39E6C985C774 /* Sandbox2D.cpp */,
+				7741CB5E9D67FB10046EF19E /* Sandbox2D.h */,
+				D1332996F96DE248E1096FD6 /* Sandbox3D.cpp */,
+				2BB93F0051DF6EB2B8E66540 /* Sandbox3D.h */,
+				BA8EE678CCB8C32A00A9ACB8 /* SandboxAtmosphere.cpp */,
+				F4004C22C2239FD44931F262 /* SandboxAtmosphere.h */,
+				AD2B6C10DF24B6C25903F250 /* SandboxDigits.cpp */,
+				AE6AFE3A71D6BFECB07A647A /* SandboxDigits.h */,
+				26B0AF10487C5C4285318550 /* SandboxPBR.cpp */,
+				67D6575AB0473B8CF4E60D9A /* SandboxPBR.h */,
+				D1BB07641F1DFD96953CFDA4 /* SandboxScene.cpp */,
+				42B0956E647C42A0A1316BAE /* SandboxScene.h */,
+				BBF76781A7E87333FA200DC1 /* Frameworks */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+				9D968EAA920D05DCE0E0A4EA /* Projects */,
+			);
+			name = Sandbox;
+			sourceTree = "<group>";
+		};
+		9D968EAA920D05DCE0E0A4EA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				CA8AF8EFA9A8132185B16F2F /* Artifice.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBCE9B276EBCC1D9FDE2A167 /* Sandbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B193D08908213AFBE09A4EC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C3EAE95FF34B847505714D5 /* libArtifice.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBF76781A7E87333FA200DC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */,
+				0BACC980CF188B320DBC2FC0 /* IOKit.framework */,
+				8B91C4E06FD8CD12F3C5FB20 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100C2A2D8197429F3098686D /* Sandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF65D761148FB28238143B6 /* Build configuration list for PBXNativeTarget "Sandbox" */;
+			buildPhases = (
+				9607AE1010C857E500CD1376 /* Prebuild */,
+				EEA295B792F53369A52D7BF7 /* Resources */,
+				584FAF0EFCA24CC00EDA954E /* Sources */,
+				9607AE3510C85E7E00CD1376 /* Prelink */,
+				7EBB1517230DB2C93545FB57 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F4C0D92F5D97804CE528BD2 /* PBXTargetDependency */,
+			);
+			name = Sandbox;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Sandbox;
+			productReference = CBCE9B276EBCC1D9FDE2A167 /* Sandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Sandbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 6849586FFB54B1614389A6AF /* Sandbox */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B193D08908213AFBE09A4EC9 /* Products */;
+					ProjectRef = CA8AF8EFA9A8132185B16F2F /* Artifice.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				100C2A2D8197429F3098686D /* Sandbox.app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4C3EAE95FF34B847505714D5 /* libArtifice.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libArtifice.a;
+			remoteRef = 358CAC695DC7651B4562F2A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEA295B792F53369A52D7BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9607AE1010C857E500CD1376 /* Prebuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Prebuild;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\ncd ~/Development/Projects/Artifice\nmkdir -p bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\nmkdir -p bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\ncp -rf ../../Libraries/assimp/build/bin/libassimp.5.dylib bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf ../../Libraries/assimp/build/bin/libIrrXML.dylib bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libvulkan.1.dylib bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf Sandbox/Resources/vulkan bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libMoltenVK.dylib bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libVkLayer_khronos_validation.dylib bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf Artifice/Resources/Shaders bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\ncp -rf Artifice/Resources/Fonts bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\ncp -rf Sandbox/Assets bin/Debug-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\nfi";
+		};
+		9607AE3510C85E7E00CD1376 /* Prelink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Prelink;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\ncd ~/Development/Projects/Artifice\nmkdir -p bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\nmkdir -p bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\ncp -rf ../../Libraries/assimp/build/bin/libassimp.5.dylib bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf ../../Libraries/assimp/build/bin/libIrrXML.dylib bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libvulkan.1.dylib bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf Sandbox/Resources/vulkan bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\ncp -rf Artifice/Resources/Shaders bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\ncp -rf Artifice/Resources/Fonts bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libMoltenVK.dylib bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Frameworks\ncp -rf Sandbox/Assets bin/Release-macosx-x86_64/Sandbox/Sandbox.app/Contents/Resources\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		584FAF0EFCA24CC00EDA954E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2D8D12437C328485A36B52 /* Atmosphere.cpp in Sources */,
+				B133132C531CAF1E4A43C16C /* AtmosphereLayer.cpp in Sources */,
+				28A954327F36BEA457AFD272 /* Etna.cpp in Sources */,
+				75C76760A6AB5F52B9C395A0 /* Sandbox.cpp in Sources */,
+				5F1CD3CCD03F74BE8606220C /* Sandbox2D.cpp in Sources */,
+				6879354ED99BD6408F62838E /* Sandbox3D.cpp in Sources */,
+				40970B50B4F1504232D4D990 /* SandboxAtmosphere.cpp in Sources */,
+				DB5F826832C4F55AE4D310A8 /* SandboxDigits.cpp in Sources */,
+				0A149C684E6341DA908A7AA8 /* SandboxPBR.cpp in Sources */,
+				A724D9FC144CE86E15DFD83C /* SandboxScene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F4C0D92F5D97804CE528BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libArtifice.a;
+			targetProxy = 87C71F02B001D7B4979D6542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9212D36CAECDA6807A20376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = (
+					"",
+				);
+				CONFIGURATION_BUILD_DIR = "../bin/Release-macosx-x86_64/Sandbox";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_FAST_MATH = (
+					YES,
+				);
+				INFOPLIST_FILE = (
+					Info.plist,
+				);
+				INSTALL_PATH = "\"$(HOME)/Applications\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = Sandbox;
+			};
+			name = Release;
+		};
+		D2EB7F98773E1D4A897665D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CODE_SIGN_IDENTITY = (
+					"",
+				);
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_FAST_MATH = (
+					YES,
+				);
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AR_PLATFORM_MAC,
+					AR_RELEASE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../Artifice/Source,
+					../Artifice/Vendor/GLFW/include,
+					../Artifice/Vendor/imgui,
+					"../../../Libraries/vulkansdk-macos-1.2.141.1/macOS/include",
+					../Artifice/Vendor/stb_image,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = (
+					Info.plist,
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../../../Libraries/assimp/build/bin,
+					"../../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib",
+				);
+				OBJROOT = "../bin-int/Release-macosx-x86_64/Sandbox";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lassimp.5",
+					"-lIrrXML",
+					"-lvulkan.1",
+				);
+				SYMROOT = "../bin/Release-macosx-x86_64/Sandbox";
+			};
+			name = Release;
+		};
+		E3FEB5DE874A3F10A21B0C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CODE_SIGN_IDENTITY = (
+					"",
+				);
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AR_PLATFORM_MAC,
+					AR_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../Artifice/Source,
+					../Artifice/Vendor/GLFW/include,
+					../Artifice/Vendor/imgui,
+					"../../../Libraries/vulkansdk-macos-1.2.141.1/macOS/include",
+					../Artifice/Vendor/stb_image,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = (
+					Info.plist,
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../../../Libraries/assimp/build/bin,
+					"../../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib",
+				);
+				OBJROOT = "../bin-int/Debug-macosx-x86_64/Sandbox";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lassimp.5",
+					"-lIrrXML",
+					"-lvulkan.1",
+				);
+				SYMROOT = "../bin/Debug-macosx-x86_64/Sandbox";
+			};
+			name = Debug;
+		};
+		F1FC533C1A370BEE01D2997C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = (
+					"",
+				);
+				CONFIGURATION_BUILD_DIR = "../bin/Debug-macosx-x86_64/Sandbox";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INFOPLIST_FILE = (
+					Info.plist,
+				);
+				INSTALL_PATH = "\"$(HOME)/Applications\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = Sandbox;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3FEB5DE874A3F10A21B0C1E /* Debug */,
+				D2EB7F98773E1D4A897665D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6CF65D761148FB28238143B6 /* Build configuration list for PBXNativeTarget "Sandbox.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FC533C1A370BEE01D2997C /* Debug */,
+				A9212D36CAECDA6807A20376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

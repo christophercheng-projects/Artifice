@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		457CA30DDBA5B4FF9D0C114D /* libArtifice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3EAE95FF34B847505714D5 /* libArtifice.a */; };
+		6EC3C912DFE66A0495AD1752 /* EditorApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5112DF1A794D97CC60E9255A /* EditorApp.cpp */; };
+		713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BACC980CF188B320DBC2FC0 /* IOKit.framework */; };
+		7969B48A0BF77E7C74D022CA /* EditorLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ECFCD12E23B8EC420DF3352 /* EditorLayer.cpp */; };
+		9130093853F069AAB1254778 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B91C4E06FD8CD12F3C5FB20 /* QuartzCore.framework */; };
+		F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		358CAC695DC7651B4562F2A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8AF8EFA9A8132185B16F2F /* ../Artifice/Artifice.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D85AB1D6EF6D4D08DF894816;
+			remoteInfo = libArtifice.a;
+		};
+		87C71F02B001D7B4979D6542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8AF8EFA9A8132185B16F2F /* ../Artifice/Artifice.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D08A6FC7DBBA3EEF19D753C;
+			remoteInfo = libArtifice.a;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BACC980CF188B320DBC2FC0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		1ECFCD12E23B8EC420DF3352 /* EditorLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EditorLayer.cpp; path = Source/EditorLayer.cpp; sourceTree = "<group>"; };
+		5112DF1A794D97CC60E9255A /* EditorApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EditorApp.cpp; path = Source/EditorApp.cpp; sourceTree = "<group>"; };
+		8B91C4E06FD8CD12F3C5FB20 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		989FA13CC0DA59EEA875E77C /* EditorLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EditorLayer.h; path = Source/EditorLayer.h; sourceTree = "<group>"; };
+		CA8AF8EFA9A8132185B16F2F /* libArtifice.a */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Artifice.xcodeproj"; path = ../Artifice/Artifice.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E8FEAC5311396505F8D4F293 /* Artifice-Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Artifice-Editor.app"; path = "Artifice-Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B197043513F9FF5B8469683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */,
+				713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */,
+				9130093853F069AAB1254778 /* QuartzCore.framework in Frameworks */,
+				457CA30DDBA5B4FF9D0C114D /* libArtifice.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C1BB71B6EA1E20D40E6455B /* Artifice-Editor */ = {
+			isa = PBXGroup;
+			children = (
+				5112DF1A794D97CC60E9255A /* EditorApp.cpp */,
+				1ECFCD12E23B8EC420DF3352 /* EditorLayer.cpp */,
+				989FA13CC0DA59EEA875E77C /* EditorLayer.h */,
+				BBF76781A7E87333FA200DC1 /* Frameworks */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+				9D968EAA920D05DCE0E0A4EA /* Projects */,
+			);
+			name = "Artifice-Editor";
+			sourceTree = "<group>";
+		};
+		9D968EAA920D05DCE0E0A4EA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				CA8AF8EFA9A8132185B16F2F /* Artifice.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8FEAC5311396505F8D4F293 /* Artifice-Editor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B193D08908213AFBE09A4EC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C3EAE95FF34B847505714D5 /* libArtifice.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBF76781A7E87333FA200DC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */,
+				0BACC980CF188B320DBC2FC0 /* IOKit.framework */,
+				8B91C4E06FD8CD12F3C5FB20 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9A8C5D95036304B28AF4419 /* Artifice-Editor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1954B8A23F7AE854A681DEE2 /* Build configuration list for PBXNativeTarget "Artifice-Editor" */;
+			buildPhases = (
+				9607AE1010C857E500CD1376 /* Prebuild */,
+				9B00F0E3C1272095282E1723 /* Resources */,
+				04AE0A3A2AD439EC91DB307A /* Sources */,
+				9607AE3510C85E7E00CD1376 /* Prelink */,
+				2B197043513F9FF5B8469683 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F4C0D92F5D97804CE528BD2 /* PBXTargetDependency */,
+			);
+			name = "Artifice-Editor";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Artifice-Editor";
+			productReference = E8FEAC5311396505F8D4F293 /* Artifice-Editor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Artifice-Editor" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 1C1BB71B6EA1E20D40E6455B /* Artifice-Editor */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B193D08908213AFBE09A4EC9 /* Products */;
+					ProjectRef = CA8AF8EFA9A8132185B16F2F /* Artifice.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F9A8C5D95036304B28AF4419 /* Artifice-Editor.app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4C3EAE95FF34B847505714D5 /* libArtifice.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libArtifice.a;
+			remoteRef = 358CAC695DC7651B4562F2A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B00F0E3C1272095282E1723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9607AE1010C857E500CD1376 /* Prebuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Prebuild;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\ncd ~/Development/Projects/Artifice\nmkdir -p bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\nmkdir -p bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\ncp -rf ../../Libraries/assimp/build/bin/libassimp.5.dylib bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf ../../Libraries/assimp/build/bin/libIrrXML.dylib bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libvulkan.1.dylib bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf Artifice-Editor/Resources/vulkan bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libMoltenVK.dylib bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libVkLayer_khronos_validation.dylib bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf Artifice/Resources/Shaders bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\ncp -rf Artifice/Resources/Fonts bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\ncp -rf Artifice-Editor/Assets bin/Debug-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\nfi";
+		};
+		9607AE3510C85E7E00CD1376 /* Prelink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Prelink;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\ncd ~/Development/Projects/Artifice\nmkdir -p bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\nmkdir -p bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\ncp -rf ../../Libraries/assimp/build/bin/libassimp.5.dylib bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf ../../Libraries/assimp/build/bin/libIrrXML.dylib bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libvulkan.1.dylib bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf Artifice-Editor/Resources/vulkan bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\ncp -rf Artifice/Resources/Shaders bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\ncp -rf Artifice/Resources/Fonts bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\ncp -rf ../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib/libMoltenVK.dylib bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Frameworks\ncp -rf Artifice-Editor/Assets bin/Release-macosx-x86_64/Artifice-Editor/Artifice-Editor.app/Contents/Resources\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04AE0A3A2AD439EC91DB307A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC3C912DFE66A0495AD1752 /* EditorApp.cpp in Sources */,
+				7969B48A0BF77E7C74D022CA /* EditorLayer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F4C0D92F5D97804CE528BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libArtifice.a;
+			targetProxy = 87C71F02B001D7B4979D6542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1649A562ABC064941A5CBBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = (
+					"",
+				);
+				CONFIGURATION_BUILD_DIR = "../bin/Release-macosx-x86_64/Artifice-Editor";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_FAST_MATH = (
+					YES,
+				);
+				INFOPLIST_FILE = (
+					Info.plist,
+				);
+				INSTALL_PATH = "\"$(HOME)/Applications\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = "Artifice-Editor";
+			};
+			name = Release;
+		};
+		7F49DAC4A5700A760C770104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CODE_SIGN_IDENTITY = (
+					"",
+				);
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_FAST_MATH = (
+					YES,
+				);
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AR_PLATFORM_MAC,
+					AR_RELEASE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../Artifice/Source,
+					../Artifice/Vendor/GLFW/include,
+					../Artifice/Vendor/imgui,
+					"../../../Libraries/vulkansdk-macos-1.2.141.1/macOS/include",
+					../Artifice/Vendor/stb_image,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = (
+					Info.plist,
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib",
+					../../../Libraries/assimp/build/bin,
+				);
+				OBJROOT = "../bin-int/Release-macosx-x86_64/Artifice-Editor";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lassimp.5",
+					"-lIrrXML",
+					"-lvulkan.1",
+				);
+				SYMROOT = "../bin/Release-macosx-x86_64/Artifice-Editor";
+			};
+			name = Release;
+		};
+		8810D068BA0A1B1A33E956A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = (
+					"",
+				);
+				CONFIGURATION_BUILD_DIR = "../bin/Debug-macosx-x86_64/Artifice-Editor";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INFOPLIST_FILE = (
+					Info.plist,
+				);
+				INSTALL_PATH = "\"$(HOME)/Applications\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = "Artifice-Editor";
+			};
+			name = Debug;
+		};
+		9C74560AB386F13CA3A2EC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CODE_SIGN_IDENTITY = (
+					"",
+				);
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AR_PLATFORM_MAC,
+					AR_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../Artifice/Source,
+					../Artifice/Vendor/GLFW/include,
+					../Artifice/Vendor/imgui,
+					"../../../Libraries/vulkansdk-macos-1.2.141.1/macOS/include",
+					../Artifice/Vendor/stb_image,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = (
+					Info.plist,
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../Libraries/vulkansdk-macos-1.2.141.1/macOS/lib",
+					../../../Libraries/assimp/build/bin,
+				);
+				OBJROOT = "../bin-int/Debug-macosx-x86_64/Artifice-Editor";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lassimp.5",
+					"-lIrrXML",
+					"-lvulkan.1",
+				);
+				SYMROOT = "../bin/Debug-macosx-x86_64/Artifice-Editor";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1954B8A23F7AE854A681DEE2 /* Build configuration list for PBXNativeTarget "Artifice-Editor.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8810D068BA0A1B1A33E956A8 /* Debug */,
+				1649A562ABC064941A5CBBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Artifice-Editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C74560AB386F13CA3A2EC4A /* Debug */,
+				7F49DAC4A5700A760C770104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

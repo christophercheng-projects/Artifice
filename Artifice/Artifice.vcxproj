@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6C9515D6-5862-70E1-817B-5E896DA7A56F}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Artifice</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\bin\Debug-windows-x86_64\Artifice\</OutDir>
+    <IntDir>..\bin-int\Debug-windows-x86_64\Artifice\</IntDir>
+    <TargetName>Artifice</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>Vendor\GLFW\include;Vendor\imgui;C:\VulkanSDK\1.1.130.0\Include;Vendor\stb_image;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\Release-windows-x86_64\Artifice\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\Artifice\</IntDir>
+    <TargetName>Artifice</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>Vendor\GLFW\include;Vendor\imgui;C:\VulkanSDK\1.1.130.0\Include;Vendor\stb_image;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>AR_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>vulkan-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.130.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>AR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>vulkan-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.130.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Artifice.h" />
+    <ClInclude Include="Source\Artifice\Core\Application.h" />
+    <ClInclude Include="Source\Artifice\Core\Cache.h" />
+    <ClInclude Include="Source\Artifice\Core\Core.h" />
+    <ClInclude Include="Source\Artifice\Core\Input.h" />
+    <ClInclude Include="Source\Artifice\Core\KeyCodes.h" />
+    <ClInclude Include="Source\Artifice\Core\Layer.h" />
+    <ClInclude Include="Source\Artifice\Core\LayerStack.h" />
+    <ClInclude Include="Source\Artifice\Core\Log.h" />
+    <ClInclude Include="Source\Artifice\Core\MouseCodes.h" />
+    <ClInclude Include="Source\Artifice\Core\TemporaryCache.h" />
+    <ClInclude Include="Source\Artifice\Core\Timestep.h" />
+    <ClInclude Include="Source\Artifice\Core\Variant.h" />
+    <ClInclude Include="Source\Artifice\Core\Window.h" />
+    <ClInclude Include="Source\Artifice\Debug\Instrumentor.h" />
+    <ClInclude Include="Source\Artifice\Events\ApplicationEvent.h" />
+    <ClInclude Include="Source\Artifice\Events\Event.h" />
+    <ClInclude Include="Source\Artifice\Events\KeyEvent.h" />
+    <ClInclude Include="Source\Artifice\Events\MouseEvent.h" />
+    <ClInclude Include="Source\Artifice\Graphics\Camera.h" />
+    <ClInclude Include="Source\Artifice\Graphics\CameraController.h" />
+    <ClInclude Include="Source\Artifice\Graphics\CommandBuffer.h" />
+    <ClInclude Include="Source\Artifice\Graphics\CommandPool.h" />
+    <ClInclude Include="Source\Artifice\Graphics\DescriptorSetAllocator.h" />
+    <ClInclude Include="Source\Artifice\Graphics\DescriptorSetLayoutInternalCache.h" />
+    <ClInclude Include="Source\Artifice\Graphics\Device.h" />
+    <ClInclude Include="Source\Artifice\Graphics\Instance.h" />
+    <ClInclude Include="Source\Artifice\Graphics\Material.h" />
+    <ClInclude Include="Source\Artifice\Graphics\RenderBackend.h" />
+    <ClInclude Include="Source\Artifice\Graphics\RenderGraph\OLD\RenderGraphOLD.h" />
+    <ClInclude Include="Source\Artifice\Graphics\RenderGraph\RenderGraph.h" />
+    <ClInclude Include="Source\Artifice\Graphics\RenderGraph\RenderGraphBuilder.h" />
+    <ClInclude Include="Source\Artifice\Graphics\RenderGraph\RenderGraphRegistry.h" />
+    <ClInclude Include="Source\Artifice\Graphics\RenderGraph\RenderGraphResourceCache.h" />
+    <ClInclude Include="Source\Artifice\Graphics\RenderHandle.h" />
+    <ClInclude Include="Source\Artifice\Graphics\RenderHandleAllocator.h" />
+    <ClInclude Include="Source\Artifice\Graphics\Renderer2D.h" />
+    <ClInclude Include="Source\Artifice\Graphics\ResourceCaches.h" />
+    <ClInclude Include="Source\Artifice\Graphics\Resources.h" />
+    <ClInclude Include="Source\Artifice\Graphics\ScratchBufferAllocator.h" />
+    <ClInclude Include="Source\Artifice\Graphics\Shader.h" />
+    <ClInclude Include="Source\Artifice\Graphics\Types.h" />
+    <ClInclude Include="Source\Artifice\Graphics\zOLDRenderPass.h" />
+    <ClInclude Include="Source\Artifice\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="Source\Artifice\Utils\FileUtils.h" />
+    <ClInclude Include="Source\Artifice\Utils\Hash.h" />
+    <ClInclude Include="Source\Artifice\Utils\OBJLoader.h" />
+    <ClInclude Include="Source\Artifice\Utils\Timer.h" />
+    <ClInclude Include="Source\Artifice\math\AABB.h" />
+    <ClInclude Include="Source\Artifice\math\Frustum.h" />
+    <ClInclude Include="Source\Artifice\math\Sphere.h" />
+    <ClInclude Include="Source\Artifice\math\mat4.h" />
+    <ClInclude Include="Source\Artifice\math\math.h" />
+    <ClInclude Include="Source\Artifice\math\math_functions.h" />
+    <ClInclude Include="Source\Artifice\math\vec2.h" />
+    <ClInclude Include="Source\Artifice\math\vec3.h" />
+    <ClInclude Include="Source\Artifice\math\vec4.h" />
+    <ClInclude Include="Vendor\stb_image\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Artifice\Core\Application.cpp" />
+    <ClCompile Include="Source\Artifice\Core\Input.cpp" />
+    <ClCompile Include="Source\Artifice\Core\Layer.cpp" />
+    <ClCompile Include="Source\Artifice\Core\LayerStack.cpp" />
+    <ClCompile Include="Source\Artifice\Core\Window.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\Camera.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\CameraController.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\CommandBuffer.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\CommandPool.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\DescriptorSetAllocator.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\DescriptorSetLayoutInternalCache.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\Device.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\DeviceUtil.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\Instance.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\Material.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\RenderBackend.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\RenderBackendConvert.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\RenderGraph\OLD\RenderGraphOLD.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\RenderGraph\RenderGraph.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\RenderGraph\RenderGraphBuilder.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\RenderGraph\RenderGraphRegistry.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\RenderHandle.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\RenderHandleAllocator.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\Renderer2D.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\Resources.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\ScratchBufferAllocator.cpp" />
+    <ClCompile Include="Source\Artifice\Graphics\Shader.cpp" />
+    <ClCompile Include="Source\Artifice\ImGui\ImGuiBuild.cpp" />
+    <ClCompile Include="Source\Artifice\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="Source\Artifice\Utils\OBJLoader.cpp" />
+    <ClCompile Include="Source\Artifice\Utils\Timer.cpp" />
+    <ClCompile Include="Source\Artifice\math\AABB.cpp" />
+    <ClCompile Include="Source\Artifice\math\Frustum.cpp" />
+    <ClCompile Include="Source\Artifice\math\Sphere.cpp" />
+    <ClCompile Include="Source\Artifice\math\mat4.cpp" />
+    <ClCompile Include="Source\Artifice\math\vec2.cpp" />
+    <ClCompile Include="Source\Artifice\math\vec3.cpp" />
+    <ClCompile Include="Source\Artifice\math\vec4.cpp" />
+    <ClCompile Include="Vendor\stb_image\stb_image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Vendor\GLFW\GLFW.vcxproj">
+      <Project>{154B857C-0182-860D-AA6E-6C109684020F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Vendor\imgui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
